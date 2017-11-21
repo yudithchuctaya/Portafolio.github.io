@@ -1,0 +1,258 @@
+/*COLORES ADOBE COLOR */
+
+/*
+
+1.  #FF969E
+2.  #E5878E 
+3.  #BF7077
+4.  #7F4B4F
+5.  #402528
+
+*/
+
+
+
+*{
+  // outline: 2px solid red;
+  padding: 0px;
+  padding: 0;
+-webkit-box-sizing:border-box;
+box-sizing: border-box;
+
+}
+// HEADER
+#icono-contacto{
+    color:#402528;
+    text-decoration:none;
+    .icon-github {
+        color:#333;
+        font-size:40px;
+        margin-left:440px;
+        text-decoration:none;
+        position:fixed;
+        z-index:1000;
+        &:hover{
+         color:#FF969E;
+         font-size:42px;
+        }
+    }
+     .icon-linkedin{
+        color:#333;
+        font-size:40px;
+        margin-top:3%;
+        margin-left:440px;
+        text-decoration:none;
+        position:fixed;
+        z-index:1000;
+          &:hover{
+        color:#FF969E;
+        font-size:42px;
+      }
+    }
+
+}
+
+
+/*ABOUTME*/
+@import "parciales/_variables.scss";
+@import "parciales/_menu.scss";
+@import "parciales/_media.scss";
+
+
+
+
+#aboutme{
+  background: #BF7077;
+  height: 75vh;
+  font-family: 'Baumans', cursive;
+    #texto-habilidades{
+      font-size: 18px;
+      margin-top:9%;
+    }
+      h1{
+      color: #402528;
+      font-size: 50px;
+      font-family: 'Baumans', cursive;
+   }
+      #foto-perfil{
+      margin-top:7%;
+      border-radius:50px;
+
+      }
+
+}
+// tarjeta===========================================================
+
+// .content-1{
+//   width: 900px;
+//   height: 900px;
+//   position: absolute;
+//   top:0;
+//   background: rgba(0,100,250,0.0);
+//   -webkit-transform:rotate(-10deg);
+//   transform: rotate(-25deg);
+//   margin-left: -900px;
+//   transition:  all 300ms;
+// }
+// .content-2{
+//   width: 1000px;
+//   height: 1000px;
+//   position: absolute;
+//   top:0;
+//   background: rgba(0,400,250,0.2);
+//   -webkit-transform:rotate(-30deg);
+//   transform: rotate(-20deg);
+//   margin-left: -800px;
+//   -webkit-transition:all 500ms;
+//   box-shadow:0px 2px 14px;
+//   transition: all 500ms
+
+// }
+// .content-3{
+//   width: 1000px;
+//   height: 1000px;
+//   position: absolute;
+//   top:0;
+//   background: rgba(0,10,0,0.5);
+//   -webkit-transform:rotate(-50deg);
+//   transform: rotate(-50deg);
+//   margin-left: -550px;
+//   margin-top: -500px;
+//   -webkit-transition:all 90ms;
+//   transition: all 800ms;
+// }
+// .content-4{
+//   width: 900px;
+//   height: 900px;
+//   position: absolute;
+//   top:0;
+//   background: rgba(0,0,0,0.5);
+//   -webkit-transform:rotate(-30deg);
+//   transform: rotate(-50deg);
+//   margin-left: -500px;
+//   margin-top: -450px;
+//   -webkit-transition:all 700ms;
+//   transition: 700px;
+//     box-shadow:0px 1px 10px;
+// }
+// .content-img:hover .content-1{
+//   width: 200%;
+//   -webkit-transition: all 900ms;
+//   transition: all 900ms
+// }
+// .content-img:hover .content-2{
+//   width: 200%;
+//   -webkit-transition: all 300ms;
+//   transition: all 300ms
+// }
+// .content-img:hover .content-3{
+//   width: 200%;
+//   -webkit-transition: all 500ms;
+//   transition: all 500ms
+// }
+
+// .content-img:hover .content-4{
+//   width: 200%;
+//  -webkit-transition: all 700ms;
+//   transition: all 700ms
+// }
+
+// ==================================================================================
+
+
+/*HABILIDADES*/
+
+#habilidades{
+    background-image:url("../img/habilidades.jpg");
+    height: 100vh;
+    color:#E5878E;
+    h1{
+      color: #402528;
+      font-size: 50px;
+      font-family: 'Baumans', cursive;
+   }
+   .habili-progress{
+      margin-top: 2%;
+   }
+
+   // iconos
+   .icon-html-five , .icon-css3 ,.icon-brand4 , .icon-html-five2 , .icon-bold , .icon-brand4, .icon-flattr , .icon-wordpress , .fa-medium , .icon-mask {
+    font-size:40px;
+   }  
+}
+// PROYECTOS//
+
+#proyectos{
+  width: 100%;
+  height:110vh;
+  background: #BF7077;
+  font-family: 'Baumans', cursive;
+      h1{
+      color: #402528;
+      font-size: 50px;
+      font-family: 'Baumans', cursive;
+   }
+   #fondo{
+    background: rgba(0,100,250,0.0);
+
+   }
+  #color{
+
+      // background:#7F4B4F;
+         #proyecto-laptop{
+          width:100%;
+          height:32vh;
+           background-image:url("../img/laptop.png");
+           background-repeat: no-repeat;
+          background-size:100%;
+          background-position: center;
+          font-family: 'Baumans', cursive;
+
+        }
+      }
+}
+// CONTACTO//
+
+#contacto{
+  width: 100%;
+  height:40vh;
+  background: #7F4B4F;
+  color: #BF7077;
+  font-family: 'Baumans', cursive;
+      h1{
+      color: #402528;
+      font-size: 50px;
+      font-family: 'Baumans', cursive;
+   }
+    .icon-mail4,.icon-mobile{
+        color:#FF969E;
+        font-size:40px;
+        margin-left:40%;
+      }
+      button{
+         padding: 18px 25px;
+        background:transparent;
+        border:solid #FF969E;
+        border-radius: 20px;
+
+
+      }
+
+    }
+
+// FOOTER//
+
+footer{
+  background:#402528;
+   #footer{
+      color:#fff;
+      font-family: 'Baumans', cursive;
+
+    }
+}
+
+
+
+
+
+
