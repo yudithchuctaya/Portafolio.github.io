@@ -57,7 +57,7 @@ nav {
   width: 30px;
   text-align: right;
   margin: 2rem 2rem;
-  background-color: white;
+  background-color: black;
   transition: all 0.3s; }
 
 .menu:before, .menu:after {
@@ -65,7 +65,7 @@ nav {
   display: block;
   width: 30px;
   height: 4px;
-  background: white;
+  background: black;
   position: absolute;
   z-index: -1; }
 
@@ -180,19 +180,35 @@ nav.header-in {
   overflow: hidden; }
 
    .background{
-  background-image: url(../img/ivem.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
+     height: 100vh;
+     background-image: url('../img/home.jpg');
+      /* Set a specific height */
+     min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
+
    }
+   // header{
+   
+   //         width: 110%;
+   //        height: 60vh;
+   //        background: rgba(10, 12, 6, 0.4);
+    
+   // }
+
   header #mouse-scroll {
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 6%;
     width: 130px;
      }
    #nombre{
       margin-top: -60px;
+          background: rgba(10, 12, 6, 0.4);
      }
    #nombre h1{
     margin-top: 80%;
@@ -203,6 +219,8 @@ nav.header-in {
        }
    #nombre h2{
     font-size:50px;
+    color:black;
+
   
        }
   button{
