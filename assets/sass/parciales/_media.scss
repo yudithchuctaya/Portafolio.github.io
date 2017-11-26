@@ -1,25 +1,54 @@
+@media (max-width:360px){
+      .background{
+      height:100vh;
+
+       }
+  
+    #mouse-scroll {
+      margin-top:-10%;
+     }
+}
 @media (max-width:1000px){
+
 	#aboutme{
-		background: #BF7077;
+		background:white;
 		width:100%;
 		height: 100vh;
 
   } 
 
-		#nombre{
-			font-size:16px;
+	#nombre{
+		margin-top:36%;
 		    }
+  .img-circle{
+    margin-left:-30px;
+    }
 	
-     #responsive #texto-habilidades{
+  #responsive{
 		font-size:15px;
+    margin-left:-40%;
 	    }
+  #texto-habilidades{
+      font-size:8px; 
+      margin-left: 10px; 
+      }
 
-
-   header #mouse-scroll {
+header #mouse-scroll {
     margin-left:35%;
-    margin-top:40%;
+    margin-top:20%;
   
-     }
+}
+    h1{
+      font-size:8px;
+    }
+    strong{
+      font-size:8px;
+    }
+// #proyectos img{
+//     width:50px;
+//     height:50px;
+// }
+
      #icono-contacto{
 	    .icon-linkedin{
 	        margin-right:20%;
@@ -32,15 +61,17 @@
 	    }
      }
 
-   #habilidades{
-   	margin-top:90%;
-   }
+  //  #habilidades{
+  //  	margin-top:20%;
+  //  }
 
+#proyectos img{
+  height:21vh;
+  }
 
   #contacto{
     width:100%;
     height:300vh;
-   	margin-top:220%;
    }
    .icon-mail4{
    	margin-left:-50%;
@@ -53,4 +84,35 @@
    	font-size:14px;
    	margin-left:-20px;
    }
+   #volver{
+     margin-top: 40px;
+   }
+
+}
+@media (max-width:1100px){
+ //    .background{
+ //      height:60vh;
+
+ //       }
+ #texto-habilidades{
+      
+      margin-top:-60%;
+  }
+
+ // #mouse-scroll {
+ //    margin-left:45%;
+ //    margin-top:40%;
+  
+ //  }
+
+
+  //   #habilidades{
+  //     margin-top:-20%;
+  //   }
+  // #proyectos{
+  //    margin-top:-35%;
+  // }
+  // #contacto{
+  //   margin-top:-30%;
+  // }
 }

@@ -63,31 +63,42 @@
 
 
 #aboutme{
-    background-image:url('../img/perfil.jpg');
+    background:   #BF7077;
     background-size: cover;
     background-position: center top;
-    height: 75vh;
-    font-family: 'Baumans', cursive;
-    #texto-habilidades{
-      font-size: 18px;
-      margin-top:9%;
-    }
-      h1{
-      color: #402528;
-      font-size: 50px;
-      font-family: 'Baumans', cursive;
-   }
-      #foto-perfil{
-      margin-top:7%;
-      border-radius:50px;
+    height: 100vh;
+    font-family: 'Overpass Mono', monospace;
 
-      }
-   #responsive{
-         height: 75vh;
-         color:white;
-        background: rgba(225, 41, 100, 0.5);
-         // transform: rotate(20deg);
+    #texto-habilidades{
+      font-size: 16px;
+      margin-top:3%;
+      margin-left:44%;
+      font-family: 'Voces', arial;
+      color:wheat;
+
+    }
+  
+    // .img-circle{
+    //  z-index:-1;
+    //  margin-left:42%;
+    //  margin-top:1%;
+    // }
+      h1{
+      color:#402528;
+      font-size: 50px;
+      font-family: 'Overpass Mono', monospace;
    }
+    strong{
+      color: wheat;
+    }
+
+   // #responsive{
+   //       width:100%;
+   //       height: 60vh;
+   //       color:white;
+   //      background:#402528;
+   //       // transform: rotate(20deg);
+   // }
 
 }
 // tarjeta===========================================================
@@ -172,20 +183,27 @@
 /*HABILIDADES*/
 
 #habilidades{
-    background-image:url("../img/habilidades.jpg");
+    background:black;
     height: 100vh;
     color: #E5878E;
+
 
   svg{width:30%;
     }
   h1{
-      color: #7F4B4F;
+      color: #E5878E;
       font-size: 50px;
-      font-family: 'Baumans', cursive;
+      font-family: 'Overpass Mono', monospace;
+   }
+   #separador{
+     line-height: 1.5em;
+     background: rebeccapurple;
+     color: rebeccapurple;
    }
   .habili-progress{
       margin-top: 2%;
    }
+
 
    // iconos
   .icon-html-five , .icon-css3 ,.icon-brand4 , .icon-html-five2 , .icon-bold , .icon-brand4, .icon-flattr , .icon-wordpress , .fa-medium , .icon-mask {
@@ -201,14 +219,23 @@
 
 #proyectos{
   width: 100%;
-  height:110vh;
+  height:140vh;
   background: #BF7077;
-  font-family: 'Baumans', cursive;
+ 
       h1{
       color: #402528;
       font-size: 50px;
-      font-family: 'Baumans', cursive;
+      font-family: 'Overpass Mono', monospace;
    }
+   p{
+     color:wheat;
+     font-family: 'Voces', arial;
+     font-size: 16px;
+   }
+  //  img{
+  //   width:100%;
+  //   height:35vh;
+  //  }
    #fondo{
     background: rgba(0,100,250,0.0);
 
@@ -223,47 +250,76 @@
            background-repeat: no-repeat;
           background-size:100%;
           background-position: center;
-          font-family: 'Baumans', cursive;
+          font-family: 'Voces', arial;
 
         }
       }
+}
+//VOLVER AL INICIO
+#volver{
+  height: 8vh;
+  background:#6f393f; 
+  margin-top: -60px;
+
 }
 // CONTACTO//
 
 #contacto{
   width: 100%;
-  height:40vh;
-  background: #7F4B4F;
-  color: #BF7077;
-  font-family: 'Baumans', cursive;
+  height:60vh;
+  background: wheat;
+  color: #7F4B4F;
+  font-family: 'Voces', arial;
       h1{
       color: #402528;
       font-size: 50px;
-      font-family: 'Baumans', cursive;
+      font-family: 'Overpass Mono', monospace;
    }
     .icon-mail4,.icon-mobile{
-        color:#FF969E;
-        font-size:40px;
+        color:#7F4B4F;
+        font-size:30px;
         margin-left:40%;
+        padding: 10px 10px;
+        border: solid #7F4B4F;
+        border-radius: 40px;
+      }
+      .fa{
+        color:rgb(196, 136, 141);
+        font-size:30px; 
+      }
+      a{
+        color:#7F4B4F;
+        text-decoration: none; 
       }
       button{
          padding: 18px 25px;
         background:transparent;
-        border:solid #FF969E;
-        border-radius: 20px;
-
-
+        border:solid #7F4B4F;
+        border-radius: 5px;
+        &:hover{
+          color: wheat;
+          background:#7F4B4F; 
+          border:solid wheat;
+        }
       }
-
+      .icon-github ,.icon-linkedin {
+        color:#7F4B4F;
+        font-size:30px;
+       
+        padding: 10px 10px;
+        border: solid #7F4B4F;
+        border-radius: 60px;
+      }
     }
+    
+
 
 // FOOTER//
-
 footer{
   background:#402528;
    #footer{
-      color:#fff;
-      font-family: 'Baumans', cursive;
+      color:wheat;
+   font-family: 'Voces', arial;
 
     }
 }

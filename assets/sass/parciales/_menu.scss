@@ -1,6 +1,6 @@
 header{
   overflow: hidden;
-  font-family: 'Baumans', cursive;
+  font-family: 'Overpass Mono', monospace;
 }
 #nav-negro {
   height: 5vh;
@@ -13,7 +13,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  color: #fff;
+  color: wheat;
   height: 60px;
   z-index: 1000;
   margin-top: 0;
@@ -86,12 +86,12 @@ nav {
 
 .open .menu:after {
   top: 0 !important;
-  background: #fff !important;
+  background: wheat !important;
   transform: rotate(45deg); }
 
 .open .menu:before {
   top: 0 !important;
-  background: #fff !important;
+  background: wheat !important;
   transform: rotate(-45deg); }
 
 nav .nav-background {
@@ -132,7 +132,7 @@ nav ul li {
   visibility: hidden; }
 
 nav ul li a {
-  color: white;
+  color: wheat;
   width: 100%;
   display: block;
   padding: 8px 0 0;
@@ -156,7 +156,7 @@ nav.open ul {
   transform: perspective(600px) rotateX(0deg); }
 
 nav.open ul li {
-  color: #fff;
+  color: wheat;
   font-size: 50px;
   visibility: visible !important; }
 
@@ -164,13 +164,13 @@ nav.header-in {
   background-color: rgba(217, 40, 130, 0.9); }
 
 .solid #toggle .menu {
-  background: #fff; }
+  background: wheat; }
 
 .solid #toggle .menu:after {
-  background-color: #fff; }
+  background-color: wheat; }
 
 .solid #toggle .menu:before {
-  background-color: #fff; }
+  background-color: wheat; }
 
 .logo {
   margin-left: 40px;
@@ -202,24 +202,24 @@ nav.header-in {
    // }
 
   header #mouse-scroll {
-    margin-left: 10%;
+    margin-left: 45%;
     margin-top: 6%;
     width: 130px;
      }
    #nombre{
       margin-top: -60px;
-          background: rgba(10, 12, 6, 0.4);
+          background: rgba(10, 12, 6, 0.7);
      }
    #nombre h1{
     margin-top: 80%;
-    color:black;
+    color:#E5878E ;
     font-size:80px;
     margin-top: 20%;
-    font-family: 'Baumans', cursive;
+    font-family: 'Overpass Mono', monospace;
        }
    #nombre h2{
     font-size:50px;
-    color:black;
+    color:wheat;
 
   
        }
@@ -230,3 +230,9 @@ nav.header-in {
     border-radius: 10px;
 
        }
+
+// 1.  #FF969E
+// 2.  #E5878E 
+// 3.  #BF7077
+// 4.  #7F4B4F
+// 5.  #402528
