@@ -65,6 +65,13 @@ nav {
   background: none;
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
 
+span {
+  font-size: 30px;
+  color: #402528; }
+  span .fa {
+    font-size: 40px;
+    color: #402528; }
+
 .logo, .menu {
   position: absolute;
   z-index: 2000; }
@@ -148,7 +155,7 @@ nav .nav-background {
 
 nav.open .nav-background {
   opacity: 1;
-  background-color: rgba(5, 5, 5, 0.71);
+  background-color: rgba(5, 5, 5, 0.768);
   transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
 
 nav.open {
@@ -240,7 +247,7 @@ header #mouse-scroll {
 
 #nombre {
   margin-top: -60px;
-  background: rgba(10, 12, 6, 0.7); }
+  background: rgba(9, 10, 5, 0.7); }
 
 #nombre h1 {
   margin-top: 80%;
@@ -259,12 +266,6 @@ button {
   border: solid #FF969E;
   border-radius: 10px; }
 
-@media (max-width: 360px) {
-  .background {
-    height: 100vh; }
-
-  #mouse-scroll {
-    margin-top: -10%; } }
 @media (max-width: 1000px) {
   #aboutme {
     background: white;
@@ -308,7 +309,8 @@ button {
 
   #contacto {
     width: 100%;
-    height: 300vh; }
+    height: 300vh;
+    margin-top: -30%; }
 
   .icon-mail4 {
     margin-left: -50%;
@@ -323,9 +325,6 @@ button {
 
   #volver {
     margin-top: 40px; } }
-@media (max-width: 1100px) {
-  #texto-habilidades {
-    margin-top: -60%; } }
 #aboutme {
   background: #BF7077;
   background-size: cover;
@@ -365,7 +364,8 @@ button {
   #habilidades .icon-html-five, #habilidades .icon-css3, #habilidades .icon-brand4, #habilidades .icon-html-five2, #habilidades .icon-bold, #habilidades .icon-brand4, #habilidades .icon-flattr, #habilidades .icon-wordpress, #habilidades .fa-medium, #habilidades .icon-mask {
     font-size: 30px;
     padding: 14px 15px;
-    background: transparent; }
+    background: transparent;
+    color: #E5878E; }
 
 #proyectos {
   width: 100%;
@@ -415,9 +415,6 @@ button {
   #contacto .fa {
     color: #c4888d;
     font-size: 30px; }
-  #contacto a {
-    color: #7F4B4F;
-    text-decoration: none; }
   #contacto button {
     padding: 18px 25px;
     background: transparent;
@@ -427,12 +424,41 @@ button {
       color: wheat;
       background: #7F4B4F;
       border: solid wheat; }
+  #contacto a {
+    color: #7F4B4F;
+    text-decoration: none; }
   #contacto .icon-github, #contacto .icon-linkedin {
     color: #7F4B4F;
     font-size: 30px;
     padding: 10px 10px;
     border: solid #7F4B4F;
     border-radius: 60px; }
+
+#cv {
+  height: 30vh;
+  background: black;
+  margin-top: -20%; }
+  #cv button {
+    padding: 15px 22px;
+    background: transparent;
+    border: solid #BF7077;
+    border-radius: 5px; }
+    #cv button:hover {
+      color: black;
+      background: #BF7077; }
+    #cv button .fa {
+      color: #7F4B4F;
+      font-size: 20px; }
+  #cv a {
+    color: #BF7077;
+    text-decoration: none; }
+  #cv .icon-github, #cv .icon-linkedin {
+    color: #BF7077;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 60%; }
+    #cv .icon-github:hover, #cv .icon-linkedin:hover {
+      color: #7F4B4F; }
 
 footer {
   background: #402528; }

@@ -2,6 +2,7 @@ header{
   overflow: hidden;
   font-family: 'Overpass Mono', monospace;
 }
+
 #nav-negro {
   height: 5vh;
   background: black;
@@ -22,6 +23,17 @@ nav {
   background: none;
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
 
+span{
+  font-size: 30px;
+  color:#402528;
+  
+  
+  .fa{
+    font-size: 40px;
+    color:#402528;
+  }
+
+}
 .logo, .menu {
   position: absolute;
   z-index: 2000; }
@@ -106,7 +118,7 @@ nav .nav-background {
 
 nav.open .nav-background {
   opacity: 1;
-  background-color: rgba(5, 5, 5, 0.71);
+  background-color: rgba(5, 5, 5, 0.768);
   transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
 
 nav.open {
@@ -208,7 +220,7 @@ nav.header-in {
      }
    #nombre{
       margin-top: -60px;
-          background: rgba(10, 12, 6, 0.7);
+          background: rgba(9, 10, 5, 0.7);
      }
    #nombre h1{
     margin-top: 80%;

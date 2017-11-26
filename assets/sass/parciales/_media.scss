@@ -1,13 +1,4 @@
-@media (max-width:360px){
-      .background{
-      height:100vh;
 
-       }
-  
-    #mouse-scroll {
-      margin-top:-10%;
-     }
-}
 @media (max-width:1000px){
 
 	#aboutme{
@@ -16,6 +7,7 @@
 		height: 100vh;
 
   } 
+
 
 	#nombre{
 		margin-top:36%;
@@ -72,6 +64,7 @@ header #mouse-scroll {
   #contacto{
     width:100%;
     height:300vh;
+    margin-top:-30%;
    }
    .icon-mail4{
    	margin-left:-50%;
@@ -89,30 +82,4 @@ header #mouse-scroll {
    }
 
 }
-@media (max-width:1100px){
- //    .background{
- //      height:60vh;
 
- //       }
- #texto-habilidades{
-      
-      margin-top:-60%;
-  }
-
- // #mouse-scroll {
- //    margin-left:45%;
- //    margin-top:40%;
-  
- //  }
-
-
-  //   #habilidades{
-  //     margin-top:-20%;
-  //   }
-  // #proyectos{
-  //    margin-top:-35%;
-  // }
-  // #contacto{
-  //   margin-top:-30%;
-  // }
-}

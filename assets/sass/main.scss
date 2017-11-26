@@ -51,6 +51,7 @@
       }
     }
 
+
 }
 
 
@@ -58,6 +59,7 @@
 @import "parciales/_variables.scss";
 @import "parciales/_menu.scss";
 @import "parciales/_media.scss";
+
 
 
 
@@ -77,12 +79,7 @@
       color:wheat;
 
     }
-  
-    // .img-circle{
-    //  z-index:-1;
-    //  margin-left:42%;
-    //  margin-top:1%;
-    // }
+
       h1{
       color:#402528;
       font-size: 50px;
@@ -92,7 +89,9 @@
       color: wheat;
     }
 
+
 }
+
 
 /*HABILIDADES*/
 
@@ -124,6 +123,8 @@
         font-size:30px;
         padding: 14px 15px;
         background:transparent;
+        color:#E5878E;
+        
    }  
 }
 // PROYECTOS//
@@ -194,21 +195,22 @@
         color:rgb(196, 136, 141);
         font-size:30px; 
       }
+      button{
+        padding: 18px 25px;
+       background:transparent;
+       border:solid #7F4B4F;
+       border-radius: 5px;
+       &:hover{
+         color: wheat;
+         background:#7F4B4F; 
+         border:solid wheat;
+       }
+     }
       a{
         color:#7F4B4F;
         text-decoration: none; 
       }
-      button{
-         padding: 18px 25px;
-        background:transparent;
-        border:solid #7F4B4F;
-        border-radius: 5px;
-        &:hover{
-          color: wheat;
-          background:#7F4B4F; 
-          border:solid wheat;
-        }
-      }
+
       .icon-github ,.icon-linkedin {
         color:#7F4B4F;
         font-size:30px;
@@ -216,6 +218,43 @@
         padding: 10px 10px;
         border: solid #7F4B4F;
         border-radius: 60px;
+      }
+    }
+    // CV
+    #cv{
+  
+      height: 30vh;
+      background:black; 
+      margin-top: -20%;
+      button{
+        padding: 15px 22px;
+       background:transparent;
+       border:solid #BF7077;
+       border-radius: 5px;
+       &:hover{
+         color: black;
+         background:#BF7077; 
+ 
+       }
+       .fa{
+        color: #7F4B4F;
+        font-size:20px; 
+      }
+     }
+     a{
+      color:#BF7077;
+      text-decoration: none; 
+     }
+
+    //  redes sociales
+      .icon-github,.icon-linkedin{
+        color:#BF7077;
+        font-size:30px;
+        padding: 10px 10px;
+        margin-top: 60%;
+        &:hover{
+          color: #7F4B4F;
+        }
       }
     }
     
@@ -230,9 +269,3 @@ footer{
 
     }
 }
-
-
-
-
-
-
