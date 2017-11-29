@@ -53,3 +53,18 @@ progress.attr({strokeDasharray: '0, 251.2'});
 Snap.animate(0,251.2, function( value ) {
     progress.attr({ 'stroke-dasharray':value+',251.2'});
 }, 5000);
+
+
+// // }=============================
+          
+//           PROYECTOS EFECTOS DE  IMAGENES
+
+// // ==============================
+
+
+ /* Demo purposes only */
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );

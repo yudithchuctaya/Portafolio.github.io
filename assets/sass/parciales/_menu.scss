@@ -1,3 +1,4 @@
+
 header{
   overflow: hidden;
   font-family: 'Overpass Mono', monospace;
@@ -194,15 +195,19 @@ nav.header-in {
    .background{
      height: 100vh;
      background-image: url('../img/home.jpg');
-      /* Set a specific height */
+    //  background-size: cover, 100% 100%;
+    //  padding-top: 56.44%;
+    //  background-position: 0 0, -1200px 0px;
+    //  background-blend-mode: luminosity;
+    //  transition: 3s background-position;
      min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;
+
+  // &:hover{
+  //   background-position: 0 0, 0 0;
+  // }
 
    }
    // header{
@@ -215,7 +220,7 @@ nav.header-in {
 
   header #mouse-scroll {
     margin-left: 45%;
-    margin-top: 4%;
+    margin-top: 180px;
     width: 130px;
      }
    #nombre{
@@ -225,12 +230,12 @@ nav.header-in {
    #nombre h1{
     margin-top: 80%;
     color:#E5878E ;
-    font-size:80px;
+    font-size:4.8em;
     margin-top: 20%;
     font-family: 'Overpass Mono', monospace;
        }
    #nombre h2{
-    font-size:50px;
+    font-size:3em;
     color:wheat;
 
   

@@ -72,7 +72,7 @@
     font-family: 'Overpass Mono', monospace;
 
     #texto-habilidades{
-      font-size: 16px;
+      font-size: 1.2em;
       margin-top:3%;
       margin-left:44%;
       font-family: 'Voces', arial;
@@ -108,6 +108,9 @@
       font-size: 50px;
       font-family: 'Overpass Mono', monospace;
    }
+   h3{
+    font-size:1.6em;
+   }
    #separador{
      line-height: 1.5em;
      background: rebeccapurple;
@@ -131,7 +134,7 @@
 
 #proyectos{
   width: 100%;
-  height:140vh;
+  height:114vh;
   background: #BF7077;
  
       h1{
@@ -162,6 +165,7 @@
 
         }
       }
+
 }
 //VOLVER AL INICIO
 #volver{
