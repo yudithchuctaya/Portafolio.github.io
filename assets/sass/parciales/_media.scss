@@ -1,83 +1,79 @@
 
 @media (max-width:1000px){
-
-	#aboutme{
-		background:white;
-		width:100%;
-    height: 100vh;
-  } 
   
-	#nombre{
-		margin-top:36%;
-		    }
-  .img-circle{
-    margin-left:-30px;
-    }
-	
-  #responsive{
-		font-size:10px;
-    margin-left:-40%;
-	    }
-  #texto-habilidades{
-      font-size:8px; 
-      margin-left: 10px; 
+  
+    
+    #nombre{
+      margin-top:36%;
+          }
+    .img-circle{
+      margin-left:-30px;
       }
-
-header #mouse-scroll {
-    margin-left:35%;
-    margin-top:20%;
+    
+    #responsive{
+      font-size:10px;
+      margin-left:-40%;
+        }
+    #texto-habilidades{
+        font-size:8px; 
+        margin-left: 10px; 
+        }
   
-}
-    h1{
-      font-size:8px;
-    }
-    strong{
-      font-size:8px;
-    }
-// #proyectos img{
-//     width:50px;
-//     height:50px;
-// }
-
-     #icono-contacto{
-	    .icon-linkedin{
-	        margin-right:20%;
-	        font-size:60px;
-	    }
-	    .icon-github {
-            margin-left:-60px;
-            font-size:60px;
-            position:relative;
-	    }
-     }
-
-  //  #habilidades{
-  //  	margin-top:20%;
-  //  }
-
-#proyectos img{
-  height:21vh;
+  header #mouse-scroll {
+      margin-left:30%;
+      margin-top:20%;
+    
   }
-
-  #contacto{
-    width:100%;
-    height:300vh;
-    margin-top:-30%;
-   }
-   .icon-mail4{
-   	margin-left:-50%;
-   	font-size:5px;
-   }
-   .icon-mobile{
-   	margin-left:-120%;
-   }
-      #phone{
-   	font-size:14px;
-   	margin-left:-20px;
-   }
-   #volver{
-     margin-top: 40px;
-   }
-
-}
-
+  
+       #icono-contacto{
+        .icon-linkedin{
+            margin-right:20%;
+            font-size:60px;
+        }
+        .icon-github {
+              margin-left:-60px;
+              font-size:60px;
+              position:relative;
+        }
+       }
+  
+  #proyectos img{
+    height:21vh;
+    }
+  
+    #contacto{
+      width:100%;
+      height:300vh;
+      margin-top:-30%;
+     }
+     .icon-mail4{
+       margin-left:-50%;
+       font-size:5px;
+     }
+     .icon-mobile{
+       margin-left:-120%;
+     }
+        #phone{
+       font-size:14px;
+       margin-left:-20px;
+     }
+     #volver{
+       margin-top: 40px;
+     }
+  
+  }
+  @media only screen and (max-width: 410px){
+    #aboutme{
+      height:50vh;
+    }
+    #habilidades{
+      margin-top:-80px;
+    }
+    header #mouse-scroll {
+      margin-top:50%;
+    
+  }
+  
+  }
+  
+  

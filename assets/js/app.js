@@ -62,9 +62,9 @@ Snap.animate(0,251.2, function( value ) {
 // // ==============================
 
 
- /* Demo purposes only */
-  $(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
+    var ie11andabove = navigator.userAgent.indexOf('Trident') != -1 && navigator.userAgent.indexOf('MSIE') == -1;
+    var ie10andbelow = navigator.userAgent.indexOf('MSIE') != -1;
+    
+    if (ie11andabove || ie10andbelow) {
+        $('body').addClass('ie');
     }
-  );

@@ -10,6 +10,8 @@
 #ee7984====rosado 
 
 */
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 * {
   padding: 0px;
   -webkit-box-sizing: border-box;
@@ -41,9 +43,76 @@
       font-size: 42px; }
 
 /*ABOUTME*/
+i {
+  font-size: 40px; }
+
+#mis-proyectos {
+  min-height: 95vh;
+  margin: 0;
+  background: #BF7077; }
+  #mis-proyectos h1 {
+    color: #402528;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
+
+.gallery {
+  text-align: center;
+  padding: 10px; }
+  .gallery figure {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    background: #fff;
+    border: 1px solid #555;
+    font-size: 0;
+    overflow: hidden; }
+    .gallery figure figcaption {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      max-height: 100%;
+      padding: 15px;
+      text-align: left;
+      font-size: 1rem;
+      opacity: 0;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; }
+      .gallery figure figcaption::-webkit-scrollbar {
+        width: 4px; }
+      .gallery figure figcaption::-webkit-scrollbar-track {
+        background: transparent; }
+      .gallery figure figcaption::-webkit-scrollbar-thumb {
+        background: #0000; }
+      .gallery figure figcaption::-webkit-scrollbar-thumb:hover {
+        background: #fff; }
+    .gallery figure img {
+      max-width: 100%; }
+    .gallery figure:hover figcaption {
+      opacity: 1; }
+    .gallery figure:hover img {
+      filter: blur(50px) saturate(5) opacity(0.5); }
+
+body.ie .gallery figure:hover::after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); }
+
+body.ie .gallery figure:hover figcaption {
+  z-index: 2;
+  color: #fff; }
+
 header {
   overflow: hidden;
-  font-family: 'Overpass Mono', monospace; }
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif; }
 
 #nav-negro {
   height: 5vh;
@@ -70,7 +139,9 @@ span {
   color: #402528; }
   span .fa {
     font-size: 40px;
-    color: #402528; }
+    color: #402528;
+    margin-top: 1%;
+    margin-left: 1%; }
 
 .logo, .menu {
   position: absolute;
@@ -229,6 +300,7 @@ nav.header-in {
   overflow: hidden; }
 
 .background {
+  width: 100%;
   height: 100vh;
   background-image: url("../img/home.jpg");
   min-height: 500px;
@@ -242,15 +314,14 @@ header #mouse-scroll {
   width: 130px; }
 
 #nombre {
-  margin-top: -60px;
+  margin-top: 16%;
   background: rgba(9, 10, 5, 0.7); }
 
 #nombre h1 {
-  margin-top: 80%;
   color: #E5878E;
   font-size: 4.8em;
-  margin-top: 20%;
-  font-family: 'Overpass Mono', monospace; }
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif; }
 
 #nombre h2 {
   font-size: 3em;
@@ -263,11 +334,6 @@ button {
   border-radius: 10px; }
 
 @media (max-width: 1000px) {
-  #aboutme {
-    background: white;
-    width: 100%;
-    height: 100vh; }
-
   #nombre {
     margin-top: 36%; }
 
@@ -283,14 +349,8 @@ button {
     margin-left: 10px; }
 
   header #mouse-scroll {
-    margin-left: 35%;
+    margin-left: 30%;
     margin-top: 20%; }
-
-  h1 {
-    font-size: 8px; }
-
-  strong {
-    font-size: 8px; }
 
   #icono-contacto .icon-linkedin {
     margin-right: 20%;
@@ -321,24 +381,36 @@ button {
 
   #volver {
     margin-top: 40px; } }
+@media only screen and (max-width: 410px) {
+  #aboutme {
+    height: 50vh; }
+
+  #habilidades {
+    margin-top: -80px; }
+
+  header #mouse-scroll {
+    margin-top: 50%; } }
 #aboutme {
   background: #BF7077;
   background-size: cover;
   background-position: center top;
-  height: 100vh;
-  font-family: 'Overpass Mono', monospace; }
+  height: 90vh;
+  font-family: 'Barlow Condensed', sans-serif; }
   #aboutme #texto-habilidades {
     font-size: 1.2em;
     margin-top: 3%;
-    margin-left: 44%;
-    font-family: 'Voces', arial;
+    margin-left: 40%;
+    font-family: 'Barlow Condensed', sans-serif;
     color: wheat; }
   #aboutme h1 {
     color: #402528;
     font-size: 50px;
-    font-family: 'Overpass Mono', monospace; }
-  #aboutme strong {
-    color: wheat; }
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
+  #aboutme .frase {
+    color: wheat;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 40%; }
 
 /*HABILIDADES*/
 #habilidades {
@@ -350,43 +422,18 @@ button {
   #habilidades h1 {
     color: #E5878E;
     font-size: 50px;
-    font-family: 'Overpass Mono', monospace; }
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
   #habilidades h3 {
-    font-size: 1.6em; }
-  #habilidades #separador {
-    line-height: 1.5em;
-    background: rebeccapurple;
-    color: rebeccapurple; }
+    font-size: 1.5em;
+    font-family: 'Barlow Condensed', sans-serif; }
+  #habilidades text {
+    color: wheat; }
   #habilidades .habili-progress {
     margin-top: 2%; }
   #habilidades .icon-html-five, #habilidades .icon-css3, #habilidades .icon-brand4, #habilidades .icon-html-five2, #habilidades .icon-bold, #habilidades .icon-brand4, #habilidades .icon-flattr, #habilidades .icon-wordpress, #habilidades .fa-medium, #habilidades .icon-mask {
-    font-size: 30px;
-    padding: 14px 15px;
-    background: transparent;
+    font-size: 2em;
     color: #E5878E; }
-
-#proyectos {
-  width: 100%;
-  height: 114vh;
-  background: #BF7077; }
-  #proyectos h1 {
-    color: #402528;
-    font-size: 50px;
-    font-family: 'Overpass Mono', monospace; }
-  #proyectos p {
-    color: wheat;
-    font-family: 'Voces', arial;
-    font-size: 16px; }
-  #proyectos #fondo {
-    background: rgba(0, 100, 250, 0); }
-  #proyectos #color #proyecto-laptop {
-    width: 100%;
-    height: 32vh;
-    background-image: url("../img/laptop.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    font-family: 'Voces', arial; }
 
 #volver {
   height: 8vh;
@@ -398,11 +445,13 @@ button {
   height: 60vh;
   background: wheat;
   color: #7F4B4F;
-  font-family: 'Voces', arial; }
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif; }
   #contacto h1 {
     color: #402528;
     font-size: 50px;
-    font-family: 'Overpass Mono', monospace; }
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
   #contacto .icon-mail4, #contacto .icon-mobile {
     color: #7F4B4F;
     font-size: 30px;
@@ -417,7 +466,8 @@ button {
     padding: 18px 25px;
     background: transparent;
     border: solid #7F4B4F;
-    border-radius: 5px; }
+    border-radius: 5px;
+    font-weight: 600; }
     #contacto button:hover {
       color: wheat;
       background: #7F4B4F;
@@ -433,9 +483,10 @@ button {
     border-radius: 60px; }
 
 #cv {
-  height: 30vh;
+  height: 28vh;
   background: black;
-  margin-top: -20%; }
+  margin-top: -20%;
+  font-family: 'Barlow Condensed', sans-serif; }
   #cv button {
     padding: 15px 22px;
     background: transparent;
@@ -462,6 +513,541 @@ footer {
   background: #402528; }
   footer #footer {
     color: wheat;
-    font-family: 'Voces', arial; }
+    font-family: 'Barlow Condensed', sans-serif; }
+
+/*COLORES ADOBE COLOR */
+/*
+
+1.  #FF969E
+2.  #E5878E 
+3.  #BF7077
+4.  #7F4B4F
+5.  #402528
+
+#ee7984====rosado 
+
+*/
+* {
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#icono-contacto {
+  color: #402528;
+  text-decoration: none; }
+  #icono-contacto .icon-github {
+    color: #333;
+    font-size: 40px;
+    margin-left: 440px;
+    text-decoration: none;
+    position: fixed;
+    z-index: 1000; }
+    #icono-contacto .icon-github:hover {
+      color: #FF969E;
+      font-size: 42px; }
+  #icono-contacto .icon-linkedin {
+    color: #333;
+    font-size: 40px;
+    margin-top: 3%;
+    margin-left: 440px;
+    text-decoration: none;
+    position: fixed;
+    z-index: 1000; }
+    #icono-contacto .icon-linkedin:hover {
+      color: #FF969E;
+      font-size: 42px; }
+
+/*ABOUTME*/
+i {
+  font-size: 40px; }
+
+#mis-proyectos {
+  min-height: 95vh;
+  margin: 0;
+  background: #BF7077; }
+  #mis-proyectos h1 {
+    color: #402528;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
+
+.gallery {
+  text-align: center;
+  padding: 10px; }
+  .gallery figure {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    background: #fff;
+    border: 1px solid #555;
+    font-size: 0;
+    overflow: hidden; }
+    .gallery figure figcaption {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      max-height: 100%;
+      padding: 15px;
+      text-align: left;
+      font-size: 1rem;
+      opacity: 0;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; }
+      .gallery figure figcaption::-webkit-scrollbar {
+        width: 4px; }
+      .gallery figure figcaption::-webkit-scrollbar-track {
+        background: transparent; }
+      .gallery figure figcaption::-webkit-scrollbar-thumb {
+        background: #0000; }
+      .gallery figure figcaption::-webkit-scrollbar-thumb:hover {
+        background: #fff; }
+    .gallery figure img {
+      max-width: 100%; }
+    .gallery figure:hover figcaption {
+      opacity: 1; }
+    .gallery figure:hover img {
+      filter: blur(50px) saturate(5) opacity(0.5); }
+
+body.ie .gallery figure:hover::after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); }
+
+body.ie .gallery figure:hover figcaption {
+  z-index: 2;
+  color: #fff; }
+
+header {
+  overflow: hidden;
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif; }
+
+#nav-negro {
+  height: 5vh;
+  background: black;
+  position: fixed;
+  z-index: 1000;
+  width: 100%; }
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: wheat;
+  height: 60px;
+  z-index: 1000;
+  margin-top: 0;
+  position: fixed;
+  padding-top: 0;
+  background: none;
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
+
+span {
+  font-size: 30px;
+  color: #402528; }
+  span .fa {
+    font-size: 40px;
+    color: #402528;
+    margin-top: 1%;
+    margin-left: 1%; }
+
+.logo, .menu {
+  position: absolute;
+  z-index: 2000; }
+
+.logo {
+  left: 0;
+  top: -4px;
+  width: 70px;
+  height: 74px;
+  text-align: left;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 180%; }
+
+#toggle {
+  /* width: 5%;
+   height: 9vh;*/
+  padding: 22px 20px;
+  z-index: 1000;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: left; }
+
+.menu {
+  top: 0;
+  right: 0;
+  height: 4px;
+  width: 30px;
+  text-align: right;
+  margin: 2rem 2rem;
+  background-color: black;
+  transition: all 0.3s; }
+
+.menu:before, .menu:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: black;
+  position: absolute;
+  z-index: -1; }
+
+.menu:before {
+  top: -8px; }
+
+.menu:after {
+  top: 8px; }
+
+#toggle:hover .menu:before {
+  top: -9px; }
+
+#toggle:hover .menu:after {
+  top: 9px; }
+
+.open .menu {
+  background: none !important; }
+
+.open .menu:after {
+  top: 0 !important;
+  background: wheat !important;
+  transform: rotate(45deg); }
+
+.open .menu:before {
+  top: 0 !important;
+  background: wheat !important;
+  transform: rotate(-45deg); }
+
+nav .nav-background {
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: none;
+  position: absolute;
+  transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
+
+nav.open .nav-background {
+  opacity: 1;
+  background-color: rgba(5, 5, 5, 0.768);
+  transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
+
+nav.open {
+  height: 100%;
+  transition: none;
+  o-transition: none;
+  -moz-transition: none;
+  -webkit-transition: none; }
+
+nav ul {
+  top: -10%;
+  padding: 0;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  display: table-cell;
+  vertical-align: middle;
+  transform: perspective(600px) rotateX(10deg);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63); }
+
+nav ul li {
+  visibility: hidden; }
+
+nav ul li a {
+  color: wheat;
+  width: 100%;
+  display: block;
+  padding: 8px 0 0;
+  letter-spacing: -0.06em; }
+
+nav ul li a:focus {
+  color: #F03C5B;
+  text-decoration: none;
+  list-style: none; }
+
+nav ul li a:hover {
+  color: #F03C5B;
+  text-decoration: none;
+  list-style: none; }
+
+nav.open ul {
+  top: 0;
+  opacity: 1;
+  margin-top: 0;
+  visibility: visible;
+  transform: perspective(600px) rotateX(0deg); }
+
+nav.open ul li {
+  color: wheat;
+  font-size: 50px;
+  visibility: visible !important; }
+
+nav.header-in {
+  background-color: rgba(217, 40, 130, 0.9); }
+
+.solid #toggle .menu {
+  background: wheat; }
+
+.solid #toggle .menu:after {
+  background-color: wheat; }
+
+.solid #toggle .menu:before {
+  background-color: wheat; }
+
+.logo {
+  margin-left: 40px;
+  margin-top: 40px; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/home.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+header #mouse-scroll {
+  margin-left: 45%;
+  margin-top: 180px;
+  width: 130px; }
+
+#nombre {
+  margin-top: 16%;
+  background: rgba(9, 10, 5, 0.7); }
+
+#nombre h1 {
+  color: #E5878E;
+  font-size: 4.8em;
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif; }
+
+#nombre h2 {
+  font-size: 3em;
+  color: wheat; }
+
+button {
+  padding: 10px 15px;
+  background: transparent;
+  border: solid #FF969E;
+  border-radius: 10px; }
+
+@media (max-width: 1000px) {
+  #nombre {
+    margin-top: 36%; }
+
+  .img-circle {
+    margin-left: -30px; }
+
+  #responsive {
+    font-size: 10px;
+    margin-left: -40%; }
+
+  #texto-habilidades {
+    font-size: 8px;
+    margin-left: 10px; }
+
+  header #mouse-scroll {
+    margin-left: 30%;
+    margin-top: 20%; }
+
+  #icono-contacto .icon-linkedin {
+    margin-right: 20%;
+    font-size: 60px; }
+  #icono-contacto .icon-github {
+    margin-left: -60px;
+    font-size: 60px;
+    position: relative; }
+
+  #proyectos img {
+    height: 21vh; }
+
+  #contacto {
+    width: 100%;
+    height: 300vh;
+    margin-top: -30%; }
+
+  .icon-mail4 {
+    margin-left: -50%;
+    font-size: 5px; }
+
+  .icon-mobile {
+    margin-left: -120%; }
+
+  #phone {
+    font-size: 14px;
+    margin-left: -20px; }
+
+  #volver {
+    margin-top: 40px; } }
+@media only screen and (max-width: 410px) {
+  #aboutme {
+    height: 50vh; }
+
+  #habilidades {
+    margin-top: -80px; }
+
+  header #mouse-scroll {
+    margin-top: 50%; } }
+#aboutme {
+  background: #BF7077;
+  background-size: cover;
+  background-position: center top;
+  height: 90vh;
+  font-family: 'Barlow Condensed', sans-serif; }
+  #aboutme #texto-habilidades {
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-left: 40%;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: wheat; }
+  #aboutme h1 {
+    color: #402528;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
+  #aboutme .frase {
+    color: wheat;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 40%; }
+
+/*HABILIDADES*/
+#habilidades {
+  background: black;
+  height: 100vh;
+  color: #E5878E; }
+  #habilidades svg {
+    width: 30%; }
+  #habilidades h1 {
+    color: #E5878E;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
+  #habilidades h3 {
+    font-size: 1.5em;
+    font-family: 'Barlow Condensed', sans-serif; }
+  #habilidades text {
+    color: wheat; }
+  #habilidades .habili-progress {
+    margin-top: 2%; }
+  #habilidades .icon-html-five, #habilidades .icon-css3, #habilidades .icon-brand4, #habilidades .icon-html-five2, #habilidades .icon-bold, #habilidades .icon-brand4, #habilidades .icon-flattr, #habilidades .icon-wordpress, #habilidades .fa-medium, #habilidades .icon-mask {
+    font-size: 2em;
+    color: #E5878E; }
+
+#proyectos {
+  width: 100%;
+  height: 114vh;
+  background: #BF7077; }
+  #proyectos h1 {
+    color: #402528;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
+  #proyectos p {
+    color: wheat;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px; }
+  #proyectos #fondo {
+    background: rgba(0, 100, 250, 0); }
+  #proyectos .hover:hover {
+    width: 100%;
+    height: 10vh;
+    background: rgba(0, 100, 250, 0); }
+
+#volver {
+  height: 8vh;
+  background: #6f393f;
+  margin-top: -60px; }
+
+#contacto {
+  width: 100%;
+  height: 60vh;
+  background: wheat;
+  color: #7F4B4F;
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif; }
+  #contacto h1 {
+    color: #402528;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif; }
+  #contacto .icon-mail4, #contacto .icon-mobile {
+    color: #7F4B4F;
+    font-size: 30px;
+    margin-left: 40%;
+    padding: 10px 10px;
+    border: solid #7F4B4F;
+    border-radius: 40px; }
+  #contacto .fa {
+    color: #c4888d;
+    font-size: 30px; }
+  #contacto button {
+    padding: 18px 25px;
+    background: transparent;
+    border: solid #7F4B4F;
+    border-radius: 5px;
+    font-weight: 600; }
+    #contacto button:hover {
+      color: wheat;
+      background: #7F4B4F;
+      border: solid wheat; }
+  #contacto a {
+    color: #7F4B4F;
+    text-decoration: none; }
+  #contacto .icon-github, #contacto .icon-linkedin {
+    color: #7F4B4F;
+    font-size: 30px;
+    padding: 10px 10px;
+    border: solid #7F4B4F;
+    border-radius: 60px; }
+
+#cv {
+  height: 28vh;
+  background: black;
+  margin-top: -20%;
+  font-family: 'Barlow Condensed', sans-serif; }
+  #cv button {
+    padding: 15px 22px;
+    background: transparent;
+    border: solid #BF7077;
+    border-radius: 5px; }
+    #cv button:hover {
+      color: black;
+      background: #BF7077; }
+    #cv button .fa {
+      color: #7F4B4F;
+      font-size: 20px; }
+  #cv a {
+    color: #BF7077;
+    text-decoration: none; }
+  #cv .icon-github, #cv .icon-linkedin {
+    color: #BF7077;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 60%; }
+    #cv .icon-github:hover, #cv .icon-linkedin:hover {
+      color: #7F4B4F; }
+
+footer {
+  background: #402528; }
+  footer #footer {
+    color: wheat;
+    font-family: 'Barlow Condensed', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

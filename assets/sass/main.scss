@@ -68,14 +68,15 @@
     background:   #BF7077;
     background-size: cover;
     background-position: center top;
-    height: 100vh;
-    font-family: 'Overpass Mono', monospace;
+    height: 90vh;
+    font-family: 'Barlow Condensed', sans-serif;
+   
 
     #texto-habilidades{
       font-size: 1.2em;
       margin-top:3%;
-      margin-left:44%;
-      font-family: 'Voces', arial;
+      margin-left:40%;
+      font-family: 'Barlow Condensed', sans-serif;
       color:wheat;
 
     }
@@ -83,13 +84,14 @@
       h1{
       color:#402528;
       font-size: 50px;
-      font-family: 'Overpass Mono', monospace;
+      font-weight:600;
+      font-family: 'Barlow Condensed', sans-serif;
    }
-    strong{
+    .frase{
       color: wheat;
+      font-family: 'Barlow Condensed', sans-serif;
+      margin-left:40%;
     }
-
-
 }
 
 
@@ -106,67 +108,58 @@
   h1{
       color: #E5878E;
       font-size: 50px;
-      font-family: 'Overpass Mono', monospace;
+      font-weight:600;
+      font-family: 'Barlow Condensed', sans-serif;
    }
    h3{
-    font-size:1.6em;
+    font-size:1.5em;
+    font-family: 'Barlow Condensed', sans-serif;
    }
-   #separador{
-     line-height: 1.5em;
-     background: rebeccapurple;
-     color: rebeccapurple;
+   text{
+     color: wheat;
    }
+  
   .habili-progress{
       margin-top: 2%;
    }
-
-
    // iconos
   .icon-html-five , .icon-css3 ,.icon-brand4 , .icon-html-five2 , .icon-bold , .icon-brand4, .icon-flattr , .icon-wordpress , .fa-medium , .icon-mask {
-        font-size:30px;
-        padding: 14px 15px;
-        background:transparent;
+        font-size:2em;
         color:#E5878E;
         
    }  
 }
 // PROYECTOS//
 
-#proyectos{
-  width: 100%;
-  height:114vh;
-  background: #BF7077;
- 
-      h1{
-      color: #402528;
-      font-size: 50px;
-      font-family: 'Overpass Mono', monospace;
-   }
-   p{
-     color:wheat;
-     font-family: 'Voces', arial;
-     font-size: 16px;
-   }
-   #fondo{
-    background: rgba(0,100,250,0.0);
+// #proyectos{
+//   width: 100%;
+//   height:114vh;
+//   background: #BF7077;
+// //  
 
-   }
-  #color{
+//       h1{
+//       color: #402528;
+//       font-size: 50px;
+//       font-weight:600;
+//       font-family: 'Barlow Condensed', sans-serif;
+//    }
+//    p{
+//      color:wheat;
+//      font-family: 'Barlow Condensed', sans-serif;
+//      font-size: 16px;
+//    }
+//    #fondo{
+//     background: rgba(0,100,250,0.0);
 
-      // background:#7F4B4F;
-         #proyecto-laptop{
-          width:100%;
-          height:32vh;
-           background-image:url("../img/laptop.png");
-           background-repeat: no-repeat;
-          background-size:100%;
-          background-position: center;
-          font-family: 'Voces', arial;
+//    }
+//    .hover:hover{
+//      width: 100%;
+//      height: 10vh;
+//     background: rgba(0,100,250,0.0);  
+//    }
 
-        }
-      }
 
-}
+// }
 //VOLVER AL INICIO
 #volver{
   height: 8vh;
@@ -181,11 +174,13 @@
   height:60vh;
   background: wheat;
   color: #7F4B4F;
-  font-family: 'Voces', arial;
+  font-weight:600;
+  font-family: 'Barlow Condensed', sans-serif;
       h1{
       color: #402528;
       font-size: 50px;
-      font-family: 'Overpass Mono', monospace;
+      font-weight:600;
+      font-family: 'Barlow Condensed', sans-serif;
    }
     .icon-mail4,.icon-mobile{
         color:#7F4B4F;
@@ -204,6 +199,7 @@
        background:transparent;
        border:solid #7F4B4F;
        border-radius: 5px;
+       font-weight:600;
        &:hover{
          color: wheat;
          background:#7F4B4F; 
@@ -227,9 +223,10 @@
     // CV
     #cv{
   
-      height: 30vh;
+      height: 28vh;
       background:black; 
       margin-top: -20%;
+      font-family: 'Barlow Condensed', sans-serif;
       button{
         padding: 15px 22px;
        background:transparent;
@@ -269,7 +266,285 @@ footer{
   background:#402528;
    #footer{
       color:wheat;
-   font-family: 'Voces', arial;
+     
+      font-family: 'Barlow Condensed', sans-serif;
+
+    }
+}
+
+
+/*COLORES ADOBE COLOR */
+
+/*
+
+1.  #FF969E
+2.  #E5878E 
+3.  #BF7077
+4.  #7F4B4F
+5.  #402528
+
+#ee7984====rosado 
+
+*/
+
+
+
+*{
+  // outline: 2px solid red;
+  padding: 0px;
+  -webkit-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+// HEADER
+#icono-contacto{
+    color:#402528;
+    text-decoration:none;
+    .icon-github {
+        color:#333;
+        font-size:40px;
+        margin-left:440px;
+        text-decoration:none;
+        position:fixed;
+        z-index:1000;
+        &:hover{
+         color:#FF969E;
+         font-size:42px;
+        }
+    }
+     .icon-linkedin{
+        color:#333;
+        font-size:40px;
+        margin-top:3%;
+        margin-left:440px;
+        text-decoration:none;
+        position:fixed;
+        z-index:1000;
+          &:hover{
+        color:#FF969E;
+        font-size:42px;
+      }
+    }
+
+
+}
+
+
+/*ABOUTME*/
+@import "parciales/_variables.scss";
+@import "parciales/_menu.scss";
+@import "parciales/_media.scss";
+
+
+
+
+
+#aboutme{
+    background:   #BF7077;
+    background-size: cover;
+    background-position: center top;
+    height: 90vh;
+    font-family: 'Barlow Condensed', sans-serif;
+   
+
+    #texto-habilidades{
+      font-size: 1.2em;
+      margin-top:3%;
+      margin-left:40%;
+      font-family: 'Barlow Condensed', sans-serif;
+      color:wheat;
+
+    }
+
+      h1{
+      color:#402528;
+      font-size: 50px;
+      font-weight:600;
+      font-family: 'Barlow Condensed', sans-serif;
+   }
+    .frase{
+      color: wheat;
+      font-family: 'Barlow Condensed', sans-serif;
+      margin-left:40%;
+    }
+}
+
+
+/*HABILIDADES*/
+
+#habilidades{
+    background:black;
+    height: 100vh;
+    color: #E5878E;
+
+
+  svg{width:30%;
+    }
+  h1{
+      color: #E5878E;
+      font-size: 50px;
+      font-weight:600;
+      font-family: 'Barlow Condensed', sans-serif;
+   }
+   h3{
+    font-size:1.5em;
+    font-family: 'Barlow Condensed', sans-serif;
+   }
+   text{
+     color: wheat;
+   }
+  
+  .habili-progress{
+      margin-top: 2%;
+   }
+
+
+   // iconos
+  .icon-html-five , .icon-css3 ,.icon-brand4 , .icon-html-five2 , .icon-bold , .icon-brand4, .icon-flattr , .icon-wordpress , .fa-medium , .icon-mask {
+        font-size:2em;
+        color:#E5878E;
+        
+   }  
+}
+// PROYECTOS//
+
+#proyectos{
+  width: 100%;
+  height:114vh;
+  background: #BF7077;
+//  
+
+      h1{
+      color: #402528;
+      font-size: 50px;
+      font-weight:600;
+      font-family: 'Barlow Condensed', sans-serif;
+   }
+   p{
+     color:wheat;
+     font-family: 'Barlow Condensed', sans-serif;
+     font-size: 16px;
+   }
+   #fondo{
+    background: rgba(0,100,250,0.0);
+
+   }
+   .hover:hover{
+     width: 100%;
+     height: 10vh;
+    background: rgba(0,100,250,0.0);  
+   }
+
+
+}
+//VOLVER AL INICIO
+#volver{
+  height: 8vh;
+  background:#6f393f; 
+  margin-top: -60px;
+
+}
+// CONTACTO//
+
+#contacto{
+  width: 100%;
+  height:60vh;
+  background: wheat;
+  color: #7F4B4F;
+  font-weight:600;
+  font-family: 'Barlow Condensed', sans-serif;
+      h1{
+      color: #402528;
+      font-size: 50px;
+      font-weight:600;
+      font-family: 'Barlow Condensed', sans-serif;
+   }
+    .icon-mail4,.icon-mobile{
+        color:#7F4B4F;
+        font-size:30px;
+        margin-left:40%;
+        padding: 10px 10px;
+        border: solid #7F4B4F;
+        border-radius: 40px;
+      }
+      .fa{
+        color:rgb(196, 136, 141);
+        font-size:30px; 
+      }
+      button{
+        padding: 18px 25px;
+       background:transparent;
+       border:solid #7F4B4F;
+       border-radius: 5px;
+       font-weight:600;
+       &:hover{
+         color: wheat;
+         background:#7F4B4F; 
+         border:solid wheat;
+       }
+     }
+      a{
+        color:#7F4B4F;
+        text-decoration: none; 
+      }
+
+      .icon-github ,.icon-linkedin {
+        color:#7F4B4F;
+        font-size:30px;
+       
+        padding: 10px 10px;
+        border: solid #7F4B4F;
+        border-radius: 60px;
+      }
+    }
+    // CV
+    #cv{
+  
+      height: 28vh;
+      background:black; 
+      margin-top: -20%;
+      font-family: 'Barlow Condensed', sans-serif;
+      button{
+        padding: 15px 22px;
+       background:transparent;
+       border:solid #BF7077;
+       border-radius: 5px;
+       &:hover{
+         color: black;
+         background:#BF7077; 
+ 
+       }
+       .fa{
+        color: #7F4B4F;
+        font-size:20px; 
+      }
+     }
+     a{
+      color:#BF7077;
+      text-decoration: none; 
+     }
+
+    //  redes sociales
+      .icon-github,.icon-linkedin{
+        color:#BF7077;
+        font-size:30px;
+        padding: 10px 10px;
+        margin-top: 60%;
+        &:hover{
+          color: #7F4B4F;
+        }
+      }
+    }
+    
+
+
+// FOOTER//
+footer{
+  background:#402528;
+   #footer{
+      color:wheat;
+     
+      font-family: 'Barlow Condensed', sans-serif;
 
     }
 }
