@@ -68,3 +68,18 @@ Snap.animate(0,251.2, function( value ) {
     if (ie11andabove || ie10andbelow) {
         $('body').addClass('ie');
     }
+
+ // // }=============================
+          
+//           MODAL
+
+// // ==============================
+
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+
+
+   

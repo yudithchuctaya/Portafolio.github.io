@@ -54,7 +54,6 @@ i{
 	}
 }
 
-// IE styles
 body.ie .gallery figure:hover::after {
 	content: '';
 	z-index: 1;
@@ -67,3 +66,14 @@ body.ie .gallery figure:hover figcaption {
 	z-index: 2;
 	color: #fff;
 }
+///////////MODAL///////////////////////
+
+  // .modal-header, h4, .close {
+  //     background-color: #BF7077;
+  //     color:white !important;
+  //     text-align: center;
+  //     font-size: 30px;
+  // }
+  // .modal-footer {
+  //     background-color:#BF7077;
+  // }
