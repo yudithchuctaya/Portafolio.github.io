@@ -1,3 +1,6 @@
+
+
+
 document.getElementById('toggle').addEventListener('click',function(event){
     event.preventDefault();
     document.getElementById('nav-header').classList.toggle('open');
@@ -32,6 +35,8 @@ $(document).ready(function() {
     })   
      
 });
+
+
 // // }=============================
           
 //           PRGRESS BAR
@@ -69,17 +74,7 @@ Snap.animate(0,251.2, function( value ) {
         $('body').addClass('ie');
     }
 
- // // }=============================
-          
-//           MODAL
 
-// // ==============================
-
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal();
-    });
-});
 
 
    

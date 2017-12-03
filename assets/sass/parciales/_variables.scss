@@ -4,7 +4,7 @@ i{
 	font-size:40px;
 }
 #mis-proyectos{
-    min-height: 95vh;
+    min-height: 100vh;
     // height:110vh;
 	margin: 0;
     background: #BF7077;
@@ -13,7 +13,24 @@ i{
         font-size: 50px;
         font-weight:600;
         font-family: 'Barlow Condensed', sans-serif;
-     }
+	 }
+	 button{
+		padding: 14px 20px;
+	   background:transparent;
+	   border:solid #BF7077;
+	   border-radius: 5px;
+	   font-size: 2em;
+	   color:#BF7077;
+	   &:hover{
+		 color: #402528;
+		 background:#BF7077; 
+ 
+	   }
+	//    .fa{
+	// 	   font-size:2em;
+
+	//    }
+	}
 }
 
 .gallery {
@@ -23,8 +40,8 @@ i{
 		position: relative;
 		display: inline-block;
 		margin: 5px;
-		background: #fff;
-		border: 1px solid #555;
+		background: rgba(98, 44, 44, 0.3);
+		border: 1px solid #FF969E;
 		font-size: 0;
 		overflow: hidden;
 		figcaption {
@@ -44,6 +61,7 @@ i{
 			&::-webkit-scrollbar-thumb { background: #0000; }
 			&::-webkit-scrollbar-thumb:hover { background: #fff; }
 		}
+
 		img {
 			max-width: 100%;
 		}
@@ -66,14 +84,4 @@ body.ie .gallery figure:hover figcaption {
 	z-index: 2;
 	color: #fff;
 }
-///////////MODAL///////////////////////
 
-  // .modal-header, h4, .close {
-  //     background-color: #BF7077;
-  //     color:white !important;
-  //     text-align: center;
-  //     font-size: 30px;
-  // }
-  // .modal-footer {
-  //     background-color:#BF7077;
-  // }

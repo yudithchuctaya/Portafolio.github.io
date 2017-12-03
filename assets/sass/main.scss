@@ -21,40 +21,6 @@
   box-sizing: border-box;
 }
 
-// HEADER
-#icono-contacto{
-    color:#402528;
-    text-decoration:none;
-    .icon-github {
-        color:#333;
-        font-size:40px;
-        margin-left:440px;
-        text-decoration:none;
-        position:fixed;
-        z-index:1000;
-        &:hover{
-         color:#FF969E;
-         font-size:42px;
-        }
-    }
-     .icon-linkedin{
-        color:#333;
-        font-size:40px;
-        margin-top:3%;
-        margin-left:440px;
-        text-decoration:none;
-        position:fixed;
-        z-index:1000;
-          &:hover{
-        color:#FF969E;
-        font-size:42px;
-      }
-    }
-
-
-}
-
-
 /*ABOUTME*/
 @import "parciales/_variables.scss";
 @import "parciales/_menu.scss";
@@ -129,37 +95,7 @@
         
    }  
 }
-// PROYECTOS//
 
-// #proyectos{
-//   width: 100%;
-//   height:114vh;
-//   background: #BF7077;
-// //  
-
-//       h1{
-//       color: #402528;
-//       font-size: 50px;
-//       font-weight:600;
-//       font-family: 'Barlow Condensed', sans-serif;
-//    }
-//    p{
-//      color:wheat;
-//      font-family: 'Barlow Condensed', sans-serif;
-//      font-size: 16px;
-//    }
-//    #fondo{
-//     background: rgba(0,100,250,0.0);
-
-//    }
-//    .hover:hover{
-//      width: 100%;
-//      height: 10vh;
-//     background: rgba(0,100,250,0.0);  
-//    }
-
-
-// }
 //VOLVER AL INICIO
 #volver{
   height: 8vh;
@@ -223,10 +159,13 @@
     // CV
     #cv{
   
-      height: 28vh;
+      height: 34vh;
       background:black; 
-      margin-top: -20%;
+        color: #7F4B4F;
       font-family: 'Barlow Condensed', sans-serif;
+      h1{
+        margin-top:5%; 
+      }
       button{
         padding: 15px 22px;
        background:transparent;
@@ -244,15 +183,30 @@
      }
      a{
       color:#BF7077;
-      text-decoration: none; 
+      text-decoration: none;
+      margin-top:  -20%;
+     }
+     #redes{
+      margin-top:6%; 
      }
 
     //  redes sociales
       .icon-github,.icon-linkedin{
         color:#BF7077;
         font-size:30px;
-        padding: 10px 10px;
-        margin-top: 60%;
+        // padding: 10px 10px;
+        // border: solid #7F4B4F;
+        // border-radius: 60px;
+        &:hover{
+          color: #7F4B4F;
+        }
+      }
+      .fa-pinterest{
+        color:#BF7077;
+        font-size:34px;
+        // padding: 10px 10px;
+        // border: solid #7F4B4F;
+        // border-radius: 60px;
         &:hover{
           color: #7F4B4F;
         }
@@ -272,279 +226,3 @@ footer{
     }
 }
 
-
-/*COLORES ADOBE COLOR */
-
-/*
-
-1.  #FF969E
-2.  #E5878E 
-3.  #BF7077
-4.  #7F4B4F
-5.  #402528
-
-#ee7984====rosado 
-
-*/
-
-
-
-*{
-  // outline: 2px solid red;
-  padding: 0px;
-  -webkit-box-sizing:border-box;
-  box-sizing: border-box;
-}
-
-// HEADER
-#icono-contacto{
-    color:#402528;
-    text-decoration:none;
-    .icon-github {
-        color:#333;
-        font-size:40px;
-        margin-left:440px;
-        text-decoration:none;
-        position:fixed;
-        z-index:1000;
-        &:hover{
-         color:#FF969E;
-         font-size:42px;
-        }
-    }
-     .icon-linkedin{
-        color:#333;
-        font-size:40px;
-        margin-top:3%;
-        margin-left:440px;
-        text-decoration:none;
-        position:fixed;
-        z-index:1000;
-          &:hover{
-        color:#FF969E;
-        font-size:42px;
-      }
-    }
-
-
-}
-
-
-/*ABOUTME*/
-@import "parciales/_variables.scss";
-@import "parciales/_menu.scss";
-@import "parciales/_media.scss";
-
-
-
-
-
-#aboutme{
-    background:   #BF7077;
-    background-size: cover;
-    background-position: center top;
-    height: 90vh;
-    font-family: 'Barlow Condensed', sans-serif;
-   
-
-    #texto-habilidades{
-      font-size: 1.2em;
-      margin-top:3%;
-      margin-left:40%;
-      font-family: 'Barlow Condensed', sans-serif;
-      color:wheat;
-
-    }
-
-      h1{
-      color:#402528;
-      font-size: 50px;
-      font-weight:600;
-      font-family: 'Barlow Condensed', sans-serif;
-   }
-    .frase{
-      color: wheat;
-      font-family: 'Barlow Condensed', sans-serif;
-      margin-left:40%;
-    }
-}
-
-
-/*HABILIDADES*/
-
-#habilidades{
-    background:black;
-    height: 100vh;
-    color: #E5878E;
-
-
-  svg{width:30%;
-    }
-  h1{
-      color: #E5878E;
-      font-size: 50px;
-      font-weight:600;
-      font-family: 'Barlow Condensed', sans-serif;
-   }
-   h3{
-    font-size:1.5em;
-    font-family: 'Barlow Condensed', sans-serif;
-   }
-   text{
-     color: wheat;
-   }
-  
-  .habili-progress{
-      margin-top: 2%;
-   }
-
-
-   // iconos
-  .icon-html-five , .icon-css3 ,.icon-brand4 , .icon-html-five2 , .icon-bold , .icon-brand4, .icon-flattr , .icon-wordpress , .fa-medium , .icon-mask {
-        font-size:2em;
-        color:#E5878E;
-        
-   }  
-}
-// PROYECTOS//
-
-#proyectos{
-  width: 100%;
-  height:114vh;
-  background: #BF7077;
-//  
-
-      h1{
-      color: #402528;
-      font-size: 50px;
-      font-weight:600;
-      font-family: 'Barlow Condensed', sans-serif;
-   }
-   p{
-     color:wheat;
-     font-family: 'Barlow Condensed', sans-serif;
-     font-size: 16px;
-   }
-   #fondo{
-    background: rgba(0,100,250,0.0);
-
-   }
-   .hover:hover{
-     width: 100%;
-     height: 10vh;
-    background: rgba(0,100,250,0.0);  
-   }
-
-
-}
-//VOLVER AL INICIO
-#volver{
-  height: 8vh;
-  background:#6f393f; 
-  margin-top: -60px;
-
-}
-// CONTACTO//
-
-#contacto{
-  width: 100%;
-  height:60vh;
-  background: wheat;
-  color: #7F4B4F;
-  font-weight:600;
-  font-family: 'Barlow Condensed', sans-serif;
-      h1{
-      color: #402528;
-      font-size: 50px;
-      font-weight:600;
-      font-family: 'Barlow Condensed', sans-serif;
-   }
-    .icon-mail4,.icon-mobile{
-        color:#7F4B4F;
-        font-size:30px;
-        margin-left:40%;
-        padding: 10px 10px;
-        border: solid #7F4B4F;
-        border-radius: 40px;
-      }
-      .fa{
-        color:rgb(196, 136, 141);
-        font-size:30px; 
-      }
-      button{
-        padding: 18px 25px;
-       background:transparent;
-       border:solid #7F4B4F;
-       border-radius: 5px;
-       font-weight:600;
-       &:hover{
-         color: wheat;
-         background:#7F4B4F; 
-         border:solid wheat;
-       }
-     }
-      a{
-        color:#7F4B4F;
-        text-decoration: none; 
-      }
-
-      .icon-github ,.icon-linkedin {
-        color:#7F4B4F;
-        font-size:30px;
-       
-        padding: 10px 10px;
-        border: solid #7F4B4F;
-        border-radius: 60px;
-      }
-    }
-    // CV
-    #cv{
-  
-      height: 28vh;
-      background:black; 
-      margin-top: -20%;
-      font-family: 'Barlow Condensed', sans-serif;
-      button{
-        padding: 15px 22px;
-       background:transparent;
-       border:solid #BF7077;
-       border-radius: 5px;
-       &:hover{
-         color: black;
-         background:#BF7077; 
- 
-       }
-       .fa{
-        color: #7F4B4F;
-        font-size:20px; 
-      }
-     }
-     a{
-      color:#BF7077;
-      text-decoration: none; 
-     }
-
-    //  redes sociales
-      .icon-github,.icon-linkedin{
-        color:#BF7077;
-        font-size:30px;
-        padding: 10px 10px;
-        margin-top: 60%;
-        &:hover{
-          color: #7F4B4F;
-        }
-      }
-    }
-    
-
-
-// FOOTER//
-footer{
-  background:#402528;
-   #footer{
-      color:wheat;
-     
-      font-family: 'Barlow Condensed', sans-serif;
-
-    }
-}
