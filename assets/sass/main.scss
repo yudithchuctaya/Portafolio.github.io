@@ -12,8 +12,6 @@
 
 */
 
-
-
 *{
   // outline: 2px solid red;
   padding: 0px;
@@ -30,46 +28,64 @@
 
 
 
-#aboutme{
-    background:   #BF7077;
-    background-size: cover;
-    background-position: center top;
-    height: 90vh;
-    font-family: 'Barlow Condensed', sans-serif;
-   
 
-    #texto-habilidades{
-      font-size: 1.2em;
-      margin-top:3%;
-      margin-left:40%;
-      font-family: 'Barlow Condensed', sans-serif;
-      color:wheat;
 
-    }
+#about{
+ background-color: #BF7077; 
 
-      h1{
+#profile{
+  border-radius: 50%;
+  margin: auto;
+  clear: right;
+}
+
+   h1{
       color:#402528;
-      font-size: 50px;
+      font-size: 4em;
       font-weight:600;
       font-family: 'Barlow Condensed', sans-serif;
    }
-    .frase{
-      color: wheat;
-      font-family: 'Barlow Condensed', sans-serif;
-      margin-left:40%;
-    }
+.jumbotron{
+  background-color: #f4a19a; 
+  margin-top: auto;
+}
+.row #about-me{
+   font-family: 'Barlow Condensed', sans-serif;
+  color: wheat;
+  text-align: center;
+  margin:15px auto; 
+  font-size: 1.4em;
+}
+#belowhr{
+   font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  color:  wheat;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#decorate{
+  font-size: 1.8em;
+  margin: 35px 10px 5px;
+}
+.frase{
+  color:wheat;
+  font-size: 1.5em;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+hr{
+  border-top: 5px solid  wheat;
+}
+
 }
 
 
 /*HABILIDADES*/
 
 #habilidades{
+    width:100%;
     background:black;
-    height: 100vh;
-    color: #E5878E;
-
-
-  svg{width:30%;
+    margin-top:-5%;
+  svg {width:30%;
     }
   h1{
       color: #E5878E;
@@ -80,58 +96,95 @@
    h3{
     font-size:1.5em;
     font-family: 'Barlow Condensed', sans-serif;
+    color:#E5878E;
+.sass{
+   width:100%;
+  height:30px;
+  color:#E5878E;
+  padding:0em;
+  transition:150ms ease transform;
+}
+
+.sass:hover{
+  transform:scale(1.2);
+}
    }
    text{
      color: wheat;
    }
-  
-  .habili-progress{
-      margin-top: 2%;
-   }
    // iconos
   .icon-html-five , .icon-css3 ,.icon-brand4 , .icon-html-five2 , .icon-bold , .icon-brand4, .icon-flattr , .icon-wordpress , .fa-medium , .icon-mask {
-        font-size:2em;
+        font-size:1.5em;
         color:#E5878E;
-        
-   }  
+        margin-top:10%;  
+   }
+ 
 }
 
 //VOLVER AL INICIO
-#volver{
-  height: 8vh;
-  background:#6f393f; 
-  margin-top: -60px;
+// #volver{
+//   height: 8vh;
+//   background:#6f393f; 
+//   margin-top: -60px;
 
-}
+// }
 // CONTACTO//
-
-#contacto{
-  width: 100%;
-  height:60vh;
-  background: wheat;
-  color: #7F4B4F;
-  font-weight:600;
-  font-family: 'Barlow Condensed', sans-serif;
-      h1{
-      color: #402528;
-      font-size: 50px;
-      font-weight:600;
+    .panel-footer{
+      padding: 10px;
+      background: #000;
       font-family: 'Barlow Condensed', sans-serif;
-   }
-    .icon-mail4,.icon-mobile{
+      #fondo{
+        background:black;
+      }
+
+      #contacto{
+        background-color:wheat;
+      }
+
+      h1{
+          color: #402528;
+          font-size: 50px;
+          font-weight:600;
+          font-family: 'Barlow Condensed', sans-serif;
+       }
+    .icon-mail4{
         color:#7F4B4F;
         font-size:30px;
-        margin-left:40%;
+        margin-left:5%;
         padding: 10px 10px;
         border: solid #7F4B4F;
         border-radius: 40px;
       }
-      .fa{
-        color:rgb(196, 136, 141);
-        font-size:30px; 
+
+    .panel-footer #follow a{
+      margin-right: 5px;
+      font-size: 1.5em;
+      color: white;
+    }
+    .panel-footer #follow  a:hover{
+      color: #7F4B4F;
+    }
+    .last{
+      border-top: 2px solid #7F4B4F;
+      border-style:#7F4B4F;
+       
+    }
+
+
+    //  redes sociales
+      .fa-github , .fa-linkedin , .fa-pinterest{
+        color:#7F4B4F;
+        font-size:2em;
+        padding: 10px 10px;
+        border: solid #7F4B4F;
+        margin:10px;
+        &:hover{
+          color:#402528;
+        }
       }
+      // descargar mi cv
       button{
-        padding: 18px 25px;
+        padding: 10px 16px;
        background:transparent;
        border:solid #7F4B4F;
        border-radius: 5px;
@@ -146,81 +199,21 @@
         color:#7F4B4F;
         text-decoration: none; 
       }
-
-      .icon-github ,.icon-linkedin {
-        color:#7F4B4F;
-        font-size:30px;
-       
-        padding: 10px 10px;
-        border: solid #7F4B4F;
-        border-radius: 60px;
+      // ==========================00
+    @media (max-width:767px){
+      .navbar-brand h1{
+        font-size: 1.5em;
+      }
+      .row #profile{
+        margin: auto;
       }
     }
-    // CV
-    #cv{
-  
-      height: 34vh;
-      background:black; 
-        color: #7F4B4F;
-      font-family: 'Barlow Condensed', sans-serif;
-      h1{
-        margin-top:5%; 
-      }
-      button{
-        padding: 15px 22px;
-       background:transparent;
-       border:solid #BF7077;
-       border-radius: 5px;
-       &:hover{
-         color: black;
-         background:#BF7077; 
- 
-       }
-       .fa{
-        color: #7F4B4F;
-        font-size:20px; 
-      }
-     }
-     a{
-      color:#BF7077;
-      text-decoration: none;
-      margin-top:  -20%;
-     }
-     #redes{
-      margin-top:6%; 
-     }
-
-    //  redes sociales
-      .icon-github,.icon-linkedin{
-        color:#BF7077;
-        font-size:30px;
-        // padding: 10px 10px;
-        // border: solid #7F4B4F;
-        // border-radius: 60px;
-        &:hover{
-          color: #7F4B4F;
-        }
-      }
-      .fa-pinterest{
-        color:#BF7077;
-        font-size:34px;
-        // padding: 10px 10px;
-        // border: solid #7F4B4F;
-        // border-radius: 60px;
-        &:hover{
-          color: #7F4B4F;
-        }
-      }
-    }
-    
-
-
+}
 // FOOTER//
 footer{
   background:#402528;
    #footer{
       color:wheat;
-     
       font-family: 'Barlow Condensed', sans-serif;
 
     }

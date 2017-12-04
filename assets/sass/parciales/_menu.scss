@@ -201,30 +201,15 @@ nav.header-in {
 
    .background{
     width:100%;
-     height: 100vh;
+     // height: 100vh;
      background-image: url('../img/home.jpg');
-    //  background-size: cover, 100% 100%;
-    //  padding-top: 56.44%;
-    //  background-position: 0 0, -1200px 0px;
-    //  background-blend-mode: luminosity;
-    //  transition: 3s background-position;
+     background-size: cover, 100% 100%;
+     transition: 3s background-position;
      min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-
-  // &:hover{
-  //   background-position: 0 0, 0 0;
-  // }
-
    }
-   // header{
-   
-   //         width: 110%;
-   //        height: 60vh;
-   //        background: rgba(10, 12, 6, 0.4);
-    
-   // }
 
   header #mouse-scroll {
     margin-left: 45%;

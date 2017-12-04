@@ -20,29 +20,26 @@
 i {
   font-size: 40px; }
 
-#mis-proyectos {
-  min-height: 100vh;
-  margin: 0;
+.gallery {
   background: #BF7077; }
-  #mis-proyectos h1 {
+  .gallery h1 {
     color: #402528;
     font-size: 50px;
     font-weight: 600;
     font-family: 'Barlow Condensed', sans-serif; }
-  #mis-proyectos button {
-    padding: 14px 20px;
+  .gallery button {
+    padding: 10px 16px;
     background: transparent;
     border: solid #BF7077;
     border-radius: 5px;
-    font-size: 2em;
+    font-size: 20px;
     color: #BF7077; }
-    #mis-proyectos button:hover {
+    .gallery button:hover {
       color: #402528;
       background: #BF7077; }
-
-.gallery {
-  text-align: center;
-  padding: 10px; }
+  .gallery .fa {
+    color: #7F4B4F;
+    font-size: 1em; }
   .gallery figure {
     position: relative;
     display: inline-block;
@@ -79,20 +76,9 @@ i {
     .gallery figure:hover img {
       filter: blur(50px) saturate(5) opacity(0.5); }
 
-body.ie .gallery figure:hover::after {
-  content: '';
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.75); }
-
-body.ie .gallery figure:hover figcaption {
-  z-index: 2;
-  color: #fff; }
-
+@media (max-width: 767px) {
+  .row #profile {
+    margin: auto; } }
 header {
   overflow: hidden;
   font-weight: 600;
@@ -285,8 +271,9 @@ nav.header-in {
 
 .background {
   width: 100%;
-  height: 100vh;
   background-image: url("../img/home.jpg");
+  background-size: cover, 100% 100%;
+  transition: 3s background-position;
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -318,40 +305,16 @@ button {
   border-radius: 10px; }
 
 @media (max-width: 1000px) {
-  #nombre {
-    margin-top: 36%; }
-
-  .img-circle {
-    margin-left: -30px; }
-
   #responsive {
-    font-size: 10px;
-    margin-left: -40%; }
-
-  #texto-habilidades {
-    font-size: 8px;
-    margin-left: 10px; }
+    font-size: 6px; }
 
   header #mouse-scroll {
     margin-left: 30%;
     margin-top: 20%; }
 
-  #icono-contacto .icon-linkedin {
-    margin-right: 20%;
-    font-size: 60px; }
-  #icono-contacto .icon-github {
-    margin-left: -60px;
-    font-size: 60px;
-    position: relative; }
-
   #mis-proyectos button {
     padding: 10px 20px;
     font-size: 1em; }
-
-  #contacto {
-    width: 100%;
-    height: 300vh;
-    margin-top: -30%; }
 
   .icon-mail4 {
     margin-left: -50%;
@@ -364,44 +327,49 @@ button {
     font-size: 14px;
     margin-left: -20px; }
 
-  #volver {
-    margin-top: 40px; } }
-@media only screen and (max-width: 410px) {
-  #aboutme {
-    height: 50vh; }
-
-  #habilidades {
-    margin-top: -80px; }
-
-  header #mouse-scroll {
-    margin-top: 50%; } }
-#aboutme {
-  background: #BF7077;
-  background-size: cover;
-  background-position: center top;
-  height: 90vh;
-  font-family: 'Barlow Condensed', sans-serif; }
-  #aboutme #texto-habilidades {
-    font-size: 1.2em;
-    margin-top: 3%;
-    margin-left: 40%;
-    font-family: 'Barlow Condensed', sans-serif;
-    color: wheat; }
-  #aboutme h1 {
+  #gallery button {
+    font-size: 10px; } }
+#about {
+  background-color: #BF7077; }
+  #about #profile {
+    border-radius: 50%;
+    margin: auto;
+    clear: right; }
+  #about h1 {
     color: #402528;
-    font-size: 50px;
+    font-size: 4em;
     font-weight: 600;
     font-family: 'Barlow Condensed', sans-serif; }
-  #aboutme .frase {
-    color: wheat;
+  #about .jumbotron {
+    background-color: #f4a19a;
+    margin-top: auto; }
+  #about .row #about-me {
     font-family: 'Barlow Condensed', sans-serif;
-    margin-left: 40%; }
+    color: wheat;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 1.4em; }
+  #about #belowhr {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    color: wheat;
+    font-size: 1.1em;
+    font-weight: bold; }
+  #about #decorate {
+    font-size: 1.8em;
+    margin: 35px 10px 5px; }
+  #about .frase {
+    color: wheat;
+    font-size: 1.5em;
+    font-family: 'Barlow Condensed', sans-serif; }
+  #about hr {
+    border-top: 5px solid  wheat; }
 
 /*HABILIDADES*/
 #habilidades {
+  width: 100%;
   background: black;
-  height: 100vh;
-  color: #E5878E; }
+  margin-top: -5%; }
   #habilidades svg {
     width: 30%; }
   #habilidades h1 {
@@ -411,96 +379,78 @@ button {
     font-family: 'Barlow Condensed', sans-serif; }
   #habilidades h3 {
     font-size: 1.5em;
-    font-family: 'Barlow Condensed', sans-serif; }
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #E5878E; }
+    #habilidades h3 .sass {
+      width: 100%;
+      height: 30px;
+      color: #E5878E;
+      padding: 0em;
+      transition: 150ms ease transform; }
+    #habilidades h3 .sass:hover {
+      transform: scale(1.2); }
   #habilidades text {
     color: wheat; }
-  #habilidades .habili-progress {
-    margin-top: 2%; }
   #habilidades .icon-html-five, #habilidades .icon-css3, #habilidades .icon-brand4, #habilidades .icon-html-five2, #habilidades .icon-bold, #habilidades .icon-brand4, #habilidades .icon-flattr, #habilidades .icon-wordpress, #habilidades .fa-medium, #habilidades .icon-mask {
-    font-size: 2em;
-    color: #E5878E; }
+    font-size: 1.5em;
+    color: #E5878E;
+    margin-top: 10%; }
 
-#volver {
-  height: 8vh;
-  background: #6f393f;
-  margin-top: -60px; }
-
-#contacto {
-  width: 100%;
-  height: 60vh;
-  background: wheat;
-  color: #7F4B4F;
-  font-weight: 600;
+.panel-footer {
+  padding: 10px;
+  background: #000;
   font-family: 'Barlow Condensed', sans-serif; }
-  #contacto h1 {
+  .panel-footer #fondo {
+    background: black; }
+  .panel-footer #contacto {
+    background-color: wheat; }
+  .panel-footer h1 {
     color: #402528;
     font-size: 50px;
     font-weight: 600;
     font-family: 'Barlow Condensed', sans-serif; }
-  #contacto .icon-mail4, #contacto .icon-mobile {
+  .panel-footer .icon-mail4 {
     color: #7F4B4F;
     font-size: 30px;
-    margin-left: 40%;
+    margin-left: 5%;
     padding: 10px 10px;
     border: solid #7F4B4F;
     border-radius: 40px; }
-  #contacto .fa {
-    color: #c4888d;
-    font-size: 30px; }
-  #contacto button {
-    padding: 18px 25px;
+  .panel-footer .panel-footer #follow a {
+    margin-right: 5px;
+    font-size: 1.5em;
+    color: white; }
+  .panel-footer .panel-footer #follow a:hover {
+    color: #7F4B4F; }
+  .panel-footer .last {
+    border-top: 2px solid #7F4B4F;
+    border-style: #7F4B4F; }
+  .panel-footer .fa-github, .panel-footer .fa-linkedin, .panel-footer .fa-pinterest {
+    color: #7F4B4F;
+    font-size: 2em;
+    padding: 10px 10px;
+    border: solid #7F4B4F;
+    margin: 10px; }
+    .panel-footer .fa-github:hover, .panel-footer .fa-linkedin:hover, .panel-footer .fa-pinterest:hover {
+      color: #402528; }
+  .panel-footer button {
+    padding: 10px 16px;
     background: transparent;
     border: solid #7F4B4F;
     border-radius: 5px;
     font-weight: 600; }
-    #contacto button:hover {
+    .panel-footer button:hover {
       color: wheat;
       background: #7F4B4F;
       border: solid wheat; }
-  #contacto a {
+  .panel-footer a {
     color: #7F4B4F;
     text-decoration: none; }
-  #contacto .icon-github, #contacto .icon-linkedin {
-    color: #7F4B4F;
-    font-size: 30px;
-    padding: 10px 10px;
-    border: solid #7F4B4F;
-    border-radius: 60px; }
-
-#cv {
-  height: 34vh;
-  background: black;
-  color: #7F4B4F;
-  font-family: 'Barlow Condensed', sans-serif; }
-  #cv h1 {
-    margin-top: 5%; }
-  #cv button {
-    padding: 15px 22px;
-    background: transparent;
-    border: solid #BF7077;
-    border-radius: 5px; }
-    #cv button:hover {
-      color: black;
-      background: #BF7077; }
-    #cv button .fa {
-      color: #7F4B4F;
-      font-size: 20px; }
-  #cv a {
-    color: #BF7077;
-    text-decoration: none;
-    margin-top: -20%; }
-  #cv #redes {
-    margin-top: 6%; }
-  #cv .icon-github, #cv .icon-linkedin {
-    color: #BF7077;
-    font-size: 30px; }
-    #cv .icon-github:hover, #cv .icon-linkedin:hover {
-      color: #7F4B4F; }
-  #cv .fa-pinterest {
-    color: #BF7077;
-    font-size: 34px; }
-    #cv .fa-pinterest:hover {
-      color: #7F4B4F; }
+  @media (max-width: 767px) {
+    .panel-footer .navbar-brand h1 {
+      font-size: 1.5em; }
+    .panel-footer .row #profile {
+      margin: auto; } }
 
 footer {
   background: #402528; }

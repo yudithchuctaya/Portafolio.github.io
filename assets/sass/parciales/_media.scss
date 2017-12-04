@@ -2,53 +2,22 @@
 @media (max-width:1000px){
   // @media (max-width:320px){
   //   @media (max-width:410px){
-  
-  
     
-    #nombre{
-      margin-top:36%;
-          }
-    .img-circle{
-      margin-left:-30px;
-      }
-    
-    #responsive{
-      font-size:10px;
-      margin-left:-40%;
+    #responsive {
+      font-size:6px;
         }
-    #texto-habilidades{
-        font-size:8px; 
-        margin-left: 10px; 
-        }
-  
   header #mouse-scroll {
       margin-left:30%;
       margin-top:20%;
-    
   }
   
-       #icono-contacto{
-        .icon-linkedin{
-            margin-right:20%;
-            font-size:60px;
-        }
-        .icon-github {
-              margin-left:-60px;
-              font-size:60px;
-              position:relative;
-        }
-       }
-  
+
   #mis-proyectos button{
     padding: 10px 20px;
       font-size: 1em;
     }
   
-    #contacto{
-      width:100%;
-      height:300vh;
-      margin-top:-30%;
-     }
+
      .icon-mail4{
        margin-left:-50%;
        font-size:5px;
@@ -60,25 +29,23 @@
        font-size:14px;
        margin-left:-20px;
      }
-     #volver{
-       margin-top: 40px;
+     #gallery{
+      button{
+        font-size:10px;
+      }
      }
-  
-//   }
-//  }
+
 }
-  @media only screen and (max-width: 410px){
-    #aboutme{
-      height:50vh;
-    }
-    #habilidades{
-      margin-top:-80px;
-    }
-    header #mouse-scroll {
-      margin-top:50%;
+  // @media only screen and (max-width: 410px){
+  //   #aboutme{
+  //     height:50vh;
+  //   }
+   
+  //   header #mouse-scroll {
+  //     margin-top:50%;
     
-  }
+  // }
   
-  }
+  // }
   
   

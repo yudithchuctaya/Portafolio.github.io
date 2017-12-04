@@ -3,11 +3,11 @@
 i{
 	font-size:40px;
 }
-#mis-proyectos{
-    min-height: 100vh;
-    // height:110vh;
-	margin: 0;
-    background: #BF7077;
+
+.gallery {
+	
+	
+	background: #BF7077;
     h1{
         color: #402528;
         font-size: 50px;
@@ -15,27 +15,37 @@ i{
         font-family: 'Barlow Condensed', sans-serif;
 	 }
 	 button{
-		padding: 14px 20px;
+	   padding: 10px 16px;
 	   background:transparent;
 	   border:solid #BF7077;
 	   border-radius: 5px;
-	   font-size: 2em;
+	   font-size: 20px;
 	   color:#BF7077;
 	   &:hover{
 		 color: #402528;
 		 background:#BF7077; 
  
 	   }
-	//    .fa{
-	// 	   font-size:2em;
-
-	//    }
 	}
-}
+	  .fa{
+        color:#7F4B4F;
+        font-size:1em;
+       
+      }
 
-.gallery {
-	text-align: center;
-	padding: 10px;
+	 // button{
+  //       padding: 10px 16px;
+  //      background:transparent;
+  //      border:solid #7F4B4F;
+  //      border-radius: 5px;
+  //      font-weight:600;
+  //      &:hover{
+  //        color: wheat;
+  //        background:#7F4B4F; 
+  //        border:solid wheat;
+  //      }
+  //    }
+
 	figure {
 		position: relative;
 		display: inline-block;
@@ -71,17 +81,10 @@ i{
 		}
 	}
 }
-
-body.ie .gallery figure:hover::after {
-	content: '';
-	z-index: 1;
-	position: absolute;
-	top: 0; left: 0;
-	width: 100%; height: 100%;
-	background: rgba(#000, 0.75);
-}
-body.ie .gallery figure:hover figcaption {
-	z-index: 2;
-	color: #fff;
-}
+    @media (max-width:767px){
+ 
+       .row #profile{
+        margin: auto;
+      }
+    }
 
