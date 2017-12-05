@@ -12,12 +12,12 @@
 
 */
 
-*{
-  // outline: 2px solid red;
-  padding: 0px;
-  -webkit-box-sizing:border-box;
-  box-sizing: border-box;
-}
+// *{
+//   // outline: 2px solid red;
+//   padding: 0px;
+//   -webkit-box-sizing:border-box;
+//   box-sizing: border-box;
+// }
 
 /*ABOUTME*/
 @import "parciales/_proyectos.scss";
@@ -57,7 +57,7 @@
   font-size: 1.4em;
 }
 #belowhr{
-   font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
   color:  wheat;
   font-size: 1.1em;
@@ -71,6 +71,10 @@
   color:wheat;
   font-size: 1.5em;
   font-family: 'Barlow Condensed', sans-serif;
+  margin-left:20%;
+}
+.autor{
+   margin-left:0%;
 }
 hr{
   border-top: 5px solid  wheat;
@@ -78,11 +82,11 @@ hr{
 
 }
 
-
 /*HABILIDADES*/
 
 #habilidades{
     width:100%;
+    height:auto;
     background:black;
     margin-top:-5%;
   svg {width:30%;
@@ -130,6 +134,7 @@ hr{
 // }
 // CONTACTO//
     .panel-footer{
+      height:auto;
       padding: 10px;
       background: #000;
       font-family: 'Barlow Condensed', sans-serif;
@@ -168,6 +173,9 @@ hr{
       border-top: 2px solid #7F4B4F;
       border-style:#7F4B4F;
        
+    }
+    p{
+     font-size:1.4em; 
     }
 
 

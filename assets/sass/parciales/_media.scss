@@ -2,6 +2,9 @@
 @media (max-width:1000px){
   // @media (max-width:320px){
   //   @media (max-width:410px){
+     #nombre{
+     height:auto;
+     }
     
     #responsive {
       font-size:6px;
@@ -29,23 +32,24 @@
        font-size:14px;
        margin-left:-20px;
      }
-     #gallery{
-      button{
-        font-size:10px;
+     
+      .btn{
+        padding: 0px 10px;
+        font-size:0.5em;
+        margin-left:0px;
+        // overflow:hidden;
       }
-     }
+   
 
 }
-  // @media only screen and (max-width: 410px){
-  //   #aboutme{
-  //     height:50vh;
-  //   }
+// @media (min-width: 320px) and (max-width: 370px) {
    
-  //   header #mouse-scroll {
-  //     margin-top:50%;
-    
-  // }
-  
-  // }
+//         .btn{
+//         padding: 0px 10px;
+//         font-size:5em;
+//         // overflow:hidden;
+//       }
+// }
+
   
   
