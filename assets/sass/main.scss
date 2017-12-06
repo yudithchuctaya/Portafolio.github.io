@@ -134,8 +134,7 @@ hr{
 // }
 // CONTACTO//
     .panel-footer{
-      height:auto;
-      padding: 10px;
+      width:100%;
       background: #000;
       font-family: 'Barlow Condensed', sans-serif;
       #fondo{
@@ -222,6 +221,7 @@ footer{
   background:#402528;
    #footer{
       color:wheat;
+       font-size: 1.5em;
       font-family: 'Barlow Condensed', sans-serif;
 
     }

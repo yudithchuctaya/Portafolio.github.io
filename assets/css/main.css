@@ -280,6 +280,7 @@ header #mouse-scroll {
   width: 100%;
   height: auto;
   margin-top: 16%;
+  padding: 0px 6px 3px;
   background: rgba(9, 10, 5, 0.7); }
 
 #nombre h1 {
@@ -401,8 +402,7 @@ button {
     margin-top: 10%; }
 
 .panel-footer {
-  height: auto;
-  padding: 10px;
+  width: 100%;
   background: #000;
   font-family: 'Barlow Condensed', sans-serif; }
   .panel-footer #fondo {
@@ -463,6 +463,7 @@ footer {
   background: #402528; }
   footer #footer {
     color: wheat;
+    font-size: 1.5em;
     font-family: 'Barlow Condensed', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
