@@ -272,7 +272,7 @@ nav.open ul li {
   background-repeat: no-repeat; }
 
 header #mouse-scroll {
-  margin-left: 45%;
+  margin-left: 708px;
   margin-top: 180px;
   width: 130px; }
 
@@ -308,7 +308,7 @@ button {
     font-size: 6px; }
 
   header #mouse-scroll {
-    margin-left: 30%;
+    margin-left: 150px;
     margin-top: 20%; }
 
   #mis-proyectos button {
@@ -330,6 +330,27 @@ button {
     padding: 0px 10px;
     font-size: 0.5em;
     margin-left: 0px; } }
+@media (min-width: 320px) {
+  header #mouse-scroll {
+    margin-left: 100px; } }
+@media (min-width: 360px) {
+  header #mouse-scroll {
+    margin-left: 120px; } }
+@media (min-width: 412px) {
+  header #mouse-scroll {
+    margin-left: 150px; } }
+@media (min-width: 414px) {
+  header #mouse-scroll {
+    margin-left: 145px; } }
+@media (min-width: 768px) {
+  header #mouse-scroll {
+    margin-left: 326px; } }
+@media (min-width: 1024px) {
+  header #mouse-scroll {
+    margin-left: 440px; } }
+@media (min-width: 1050px) {
+  header #mouse-scroll {
+    margin-left: 565px; } }
 #about {
   background-color: #BF7077; }
   #about #profile {
