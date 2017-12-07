@@ -427,8 +427,6 @@ button {
   font-family: 'Barlow Condensed', sans-serif; }
   .panel-footer #fondo {
     background: black; }
-  .panel-footer #contacto {
-    background-color: wheat; }
   .panel-footer h1 {
     color: #402528;
     font-size: 50px;
@@ -468,8 +466,7 @@ button {
     font-weight: 600; }
     .panel-footer button:hover {
       color: wheat;
-      background: #7F4B4F;
-      border: solid wheat; }
+      background: #7F4B4F; }
   .panel-footer a {
     color: #7F4B4F;
     text-decoration: none; }
